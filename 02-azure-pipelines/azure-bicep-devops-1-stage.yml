@@ -30,7 +30,7 @@ steps:
 - task: AzureCLI@2
   displayName: Deploy Bicep To Azure
   inputs:
-    azureSubscription: 'Microsoft-Azure-0(17b12858-3960-4e6f-a663-a06fdae23428)'
+    azureSubscription: 'AS-Practice-Subsciption-001(0151ba51-6f90-4d09-a387-ba3b605c08de)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
