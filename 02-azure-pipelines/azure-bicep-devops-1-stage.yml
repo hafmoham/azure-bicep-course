@@ -4,9 +4,9 @@ trigger: none
 # - main
 
 variables:
-  resourceGroupName: 'rg-bicep-HoussemDellai'
+  resourceGroupName: 'rg-002-modules'
   location: 'westeurope'
-  webAppName: 'bicep-HoussemDellai'
+  webAppName: 'bicep-webapp'
   templateFile: '01-bicep-webapp/webapp-linux.bicep'
 
 pool:
@@ -17,7 +17,7 @@ steps:
 - task: AzureCLI@2
   displayName: Preview Bicep Changes
   inputs:
-    azureSubscription: 'AS-Practice-Subsciption-001(0151ba51-6f90-4d09-a387-ba3b605c08de)'
+    azureSubscription: '1dabcf09-861c-4374-aebf-d63be509564b'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
@@ -30,7 +30,7 @@ steps:
 - task: AzureCLI@2
   displayName: Deploy Bicep To Azure
   inputs:
-    azureSubscription: 'AS-Practice-Subsciption-001(0151ba51-6f90-4d09-a387-ba3b605c08de)'
+    azureSubscription: '1dabcf09-861c-4374-aebf-d63be509564b'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
